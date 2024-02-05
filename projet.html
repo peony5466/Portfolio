@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+  <!-- <link rel="stylesheet" href="images.css"> -->
+  <style>
+/* CSS pour les images */
+.img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 0 0 20px 20px;
+}
+
+.img-frame {
+  flex: 1;
+  margin: 15px;
+  overflow: hidden;
+  position: relative;
+  height: 500px; /* Ajustez la hauteur fixe selon vos préférences */
+  perspective: 1000px;
+  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
+}
+  
+
+.img-frame img {
+  width: 100%;
+  height: 78%; /* Ajustez la hauteur à 100% pour remplir le cadre */
+  object-fit: cover;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  border-radius: 20px 20px 0 0;
+}
+.img-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg); /* Rotation initiale à 180 degrés (dos de la carte caché) */
+  transition: transform 0.5s;
+  opacity: 0;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  overflow-y: auto;
+  border-radius: 0 0 20px 20px;
+}
+
+.img-frame:hover img {
+  transform: rotateY(-180deg); /* Rotation au survol vers l'arrière */
+}
+
+.img-frame:hover .img-back {
+  transform: rotateY(0deg); /* Rotation au survol vers l'avant (affiche le dos de la carte) */
+  opacity: 1;
+}
+.img-back p {
+  margin-bottom: 10px; /* Espacement entre les paragraphes */
+}
+
+
+.detail-box {
+  text-align: center;
+}
+
+  </style>
+  
+  
+  
+  
+  <title> Portfolio </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <div class="Hiba">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Stages
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Accueil </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="about.html"> Curriculum Vitae
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="projet.html">STAGES <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="vt.html">Veille Technologique</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="competence.html">Portefeuille de compétences
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding" style="background-color: #00204a; color:#ffff;">
+    <div class="container  ">
+      <div class="heading_container heading_center">
+        <h2>
+        <span>Mes</span> Stages
+        </h2>
+        <p>
+Vous trouverez dans cette page l'ensembles des Stages que j'ai eu la chance de travailler durant la periode de ma formation de BTS SIO        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="detail-box">
+            <h3>
+              STAGE 1
+            </h3>
+            <p>Au cours de mon stage de cinq semaines pendant ma première année de BTS SIO en juin 2021, j'ai contribué à un projet significatif au sein de mon lycée. L'objectif était de concevoir une Fiche d'Urgence, un formulaire interactif destiné aux parents pour collecter des informations essentielles sur leurs enfants en cas d'urgence.
+
+              Description du Projet :
+              
+              Nous avons choisi d'utiliser les applications de la suite Google Workspace pour ce projet, notamment Google Forms, Sheets, Docs, et Google Apps Script pour automatiser les processus.
+              
+              Le formulaire interactif a été créé avec Google Forms pour permettre aux parents de fournir facilement les informations nécessaires. L'utilisation de JavaScript (JS) et Google Apps Script a permis d'automatiser l'envoi d'une notification de confirmation aux parents via leur adresse e-mail lors de la soumission du formulaire.
+              
+              Les données collectées ont été stockées de manière sécurisée dans une feuille de calcul Google Sheets, garantissant la confidentialité et la facilité d'accès aux informations en cas de besoin.
+              
+              Résultats et Avantages :
+              
+              Ce projet a abouti à la création d'un outil efficace pour le personnel scolaire, facilitant la gestion des situations d'urgence. Les avantages comprennent une collecte centralisée des données, une automatisation des notifications, et une accessibilité accrue aux informations cruciales.
+              
+              Conclusion :
+              
+              Ce projet a été une opportunité d'appliquer mes compétences en programmation (JavaScript et Google Apps Script) tout en travaillant avec les outils de productivité de la suite Google. Il démontre ma capacité à concevoir, développer et mettre en œuvre des solutions informatiques pratiques et utiles.</p>
+
+
+            <p>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="detail-box">
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="detail-box"><br>
+            <h3>
+              STAGE 2
+            </h3>
+<p>Devloppempent d'un projet qui fait la visualisation des données en utilisant Python et le framwork Flask</p>
+            <div class="img-box">
+              <div class="img-frame">
+                <img src="images/importation.png" alt="">
+                <div class="img-back"><b>
+                  <!-- Description du projet pour la première image -->
+                  <h3><p>Page d'importation des fichiers.</p><br></h3>
+                  <p>la page accepte les fichiers excel et csv de n'importe quel taille.</p><br></b>
+                  <p>
+                    avec une case a cocher poue un evoie automatique d'un mail qui confirme la soumission du formulaire.
+                  une fois le formulaire est soumis il est bien enregistrer localement.</p>
+                </div>
+              </div>
+              <div class="img-frame">
+                <img src="images/choix_colonne.png" alt="">
+                <div class="img-back"><b>
+                  <!-- Description du projet pour la deuxième image -->
+                  <h3><p>page choix_colonne.</p></h3><br><br>
+                  <p>une interface qui donne a l'utilisateur l'option de choisir les axe 'X' et 'Y' pour le graph.</p></b><br>
+                  <p>Cette page recupere le contenu du dernier fichier enregistrer localement et affiche tout les colonnes existantes dans ce dernier pour choisir les axes du graph ensuiste on donne a l'utilisateur le chois de choisir entre un graph circulaire ou bien un histogramme pour afficher les données. </p>
+                </div>
+              </div>
+            
+              <div class="img-frame">
+                <img src="images/dashboardvue.png" alt="">
+                <div class="img-back">
+                  <b>
+                  <!-- Description du projet pour la troisième image -->
+                  <h3><p>Page de tableau de bord.</p></h3><br>
+                  <p>Visualisation des données.</p></b><br>
+                  <p>Après le choix des colonnes on presente un graph en fonction de choix d'utilisateur </p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Retour en haut">𖤂</button>
+
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- ... Votre code HTML existant ... -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const imgFrames = document.querySelectorAll(".img-frame");
+  
+      imgFrames.forEach((frame, index) => {
+        frame.addEventListener("mouseover", function () {
+          this.querySelector(".img-back").style.opacity = "1";
+        });
+  
+        frame.addEventListener("mouseout", function () {
+          this.querySelector(".img-back").style.opacity = "0";
+        });
+      });
+    });
+  </script>
+  
+
+  
+  
+</body>
+
+</html>
