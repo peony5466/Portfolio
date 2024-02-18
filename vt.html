@@ -2,12 +2,9 @@
 <html>
 
 <head>
-  <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
@@ -18,22 +15,57 @@
 
   <title> Ma veille </title>
 
-  <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-  <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-  <!--owl slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-  <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-  <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    .links_section {
+      background-color: #00204a; 
+      color: #fff;
+      padding: 50px 0;
+      text-align: center; 
+    }
+  
+    .links_container {
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto; 
+      background-color: #153568;
+    }
+  
+    .links_container h3 {
+      font-size: 24px; 
+    }
+  
+    .links_container ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    .links_container ul li {
+      font-size: 18px; 
+      margin-bottom: 10px;
+    }
+  
+    .links_container ul li a {
+      color: #fff; 
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+  
+    .links_container ul li a:hover {
+      color: #ffc107;
+    }
+  </style>
 
 </head>
 
@@ -47,7 +79,6 @@
       </div>
     </div>
 
-    <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -89,10 +120,8 @@
         </nav>
       </div>
     </header>
-    <!-- end header section -->
   </div>
 
-  <!-- team section -->
   <section class="team_section layout_padding">
     <div class="container-fluid">
       <div class="heading_container heading_center">
@@ -128,13 +157,12 @@
       </div>
 
       <div class="row">
-          <!-- Partie Flutter -->
-          <div class="col-md-6 order-md-2"> <!-- Utilisation de la classe order-md-2 pour changer l'ordre sur les écrans de taille moyenne et supérieure -->
+          <div class="col-md-6 order-md-2">
               <div class="img-box">
                   <img src="images/flutter2.png" alt="">
               </div>
           </div>
-          <div class="col-md-6 order-md-1"> <!-- Utilisation de la classe order-md-1 pour changer l'ordre sur les écrans de taille moyenne et supérieure -->
+          <div class="col-md-6 order-md-1"> 
               <div class="detail-box">
                   <h3>
                       Qu'est-ce que <span>Flutter</span> ?
@@ -161,7 +189,6 @@
     <div class="container">
 
 
-          <!-- Section 3 -->
     <section class="version-section">
       <div class="version-item">
           <h2>Nouveaux domaines d'application:          </h2>
@@ -185,7 +212,6 @@
       </div>
   </section>
   
-<!-- Section 5 -->
 <section class="version-section">
   <div class="version-item">
       <h2>Avantages d'utilisation</h2>
@@ -202,45 +228,60 @@
   </div>
 
   <div class="version-item">
+      <h2>2024</h2>
+      <p class="date">les phase les plus importantes</p>
+      <ul class="features">
+        <li>Flutter 3.20: Lancement officiel avec des améliorations majeures.</li>
+        <li>Dart 3.4.10: Version majeure avec des avancées du langage.</li>
+        <li>Nouvelles plateformes:
+            <ul>
+                <li>Flutter pour Linux : Version alpha pour le développement d'applications Linux.</li>
+                <li>Flutter pour Web : Version bêta publique pour le développement d'applications web.</li>
+            </ul>
+        </li>
+        <li>Sortie de l'extension FlutterMaps.</li>
+    </ul>
+    
+  </div>
+</section>
+<section class="version-section">
+  <div class="version-item">
       <h2>2023</h2>
       <p class="date">les phase les plus importantes</p>
       <ul class="features">
-          <li>Flutter 3.3: Lancement officiel, avec le compilateur Kotlin K2 en version alpha, des annotations d'exigence d'acceptation et des types définitivement non nullables.</li>
-          <li>Sortie de Dart 2.17: Améliorations du langage Dart, notamment la prise en charge des génériques de type récursifs.</li>
-          <li>Flutter pour macOS: Version bêta publique pour le développement d'applications macOS avec Flutter.
-          </li>
-          <li>Sortie de l'extension FlutterGPT.</li>
-      </ul>
+        <li>Flutter 3.3: Lancement officiel, avec le compilateur Kotlin K2 en version alpha, des annotations d'exigence d'acceptation et des types définitivement non nullables.</li>
+        <li>Sortie de Dart 2.17: Améliorations du langage Dart, notamment la prise en charge des génériques de type récursifs.</li>
+        <li>Flutter pour macOS: Version bêta publique pour le développement d'applications macOS avec Flutter.
+        </li>
+        <li>Sortie de l'extension FlutterGPT.</li>
+    </ul>
   </div>
-</section>
-  <!-- Section 4 -->
-<section class="version-section">
+
   <div class="version-item">
       <h2>2022</h2>
       <p class="date">les phase les plus importantes</p>
       <ul class="features">
-          <li>Flutter 3.0: Lancement officiel, avec des fonctionnalités pour les jeux occasionnels, la prise en charge d'Apple Silicon et des améliorations de performance pour Android.</li>
-          <li>Sortie de Dart 2.14: Nouvelles fonctionnalités du langage Dart, telles que les expressions de type et les opérateurs de collection.</li>
-          <li>Prise en charge des annotations sur les paramètres de type de classe.</li>
-          <li>Flutter for Windows: Version bêta publique pour le développement d'applications Windows avec Flutter.</li>
-      </ul>
-  </div>
+        <li>Flutter 3.0: Lancement officiel, avec des fonctionnalités pour les jeux occasionnels, la prise en charge d'Apple Silicon et des améliorations de performance pour Android.</li>
+        <li>Sortie de Dart 2.14: Nouvelles fonctionnalités du langage Dart, telles que les expressions de type et les opérateurs de collection.</li>
+        <li>Prise en charge des annotations sur les paramètres de type de classe.</li>
+        <li>Flutter for Windows: Version bêta publique pour le développement d'applications Windows avec Flutter.</li>
+    </ul>
 
+      
+  </div>
   <div class="version-item">
-      <h2>2021</h2>
-      <p class="date">les phase les plus importantes</p>
-      <ul class="features">
-          <li>Flutter 2.0: Lancement officiel, apportant des améliorations de performance et de stabilité, de nouveaux widgets et une meilleure prise en charge de Material Design.</li>
-          <li>Sortie de Dart 2.12: Améliorations du langage Dart, notamment la prise en charge des types non-nullables par défaut.</li>
-          <li>Temps de construction plus court grâce à la compilation parallèle dans le backend JVM IR.</li>
-          <li>Annonce de Flutter Web: Permet de créer des applications web avec Flutter, en utilisant le même code que pour les applications mobiles.</li>
-      </ul>
-  </div>
+    <h2>2021</h2>
+    <p class="date">les phase les plus importantes</p>
+    <ul class="features">
+        <li>Flutter 2.0: Lancement officiel, apportant des améliorations de performance et de stabilité, de nouveaux widgets et une meilleure prise en charge de Material Design.</li>
+        <li>Sortie de Dart 2.12: Améliorations du langage Dart, notamment la prise en charge des types non-nullables par défaut.</li>
+        <li>Temps de construction plus court grâce à la compilation parallèle dans le backend JVM IR.</li>
+        <li>Annonce de Flutter Web: Permet de créer des applications web avec Flutter, en utilisant le même code que pour les applications mobiles.</li>
+    </ul>
+</div>
 
-  <!-- end team section -->
   <div class="row">
-    <!-- Partie Flutter -->
-    <div class="col-md-6 order-md-2"> <!-- Utilisation de la classe order-md-2 pour changer l'ordre sur les écrans de taille moyenne et supérieure -->
+    <div class="col-md-6 order-md-2"> 
         
     </div>
     <div class="container  ">
@@ -265,18 +306,37 @@
     </div>
     </div>
 </div>
-<div class="container  ">
-  <div class="heading_container heading_center"><br><br><br>
-    <h3>  Chronologie      </h3><br><br><br>
-    <embed src="images/vt.pdf" type="application/pdf" width="100%" height="600px">
 
+
+<section class="links_section">
+  <div class="links_container">
+    <h3>  <u><b>Liens des recherches</b> </u></h3> <br>
+    <ul>
+      <li><a href="https://dyma.fr/">Dyma</a> - Présente des leçons sur Flutter</li>
+      <li><a href="https://openclassrooms.com/">OpenClassrooms</a></li>
+      <li><a href="https://developers.google.com/">Google Developers</a> - Guides sur Flutter et le langage Dart</li>
+      <li><a href="https://github.com/flutter/flutter">GitHub</a> - Informations approfondies sur Flutter</li>
+      <li><a href="https://www.youtube.com/results?search_query=flutter">Chaîne YouTube Flutter</a></li>
+      <li><a href="https://medium.com/flutter">Medium</a> - Plateforme d'édition pour des articles sur Flutter</li>
+      <li><a href="https://www.inoreader.com/">Inoreader</a> - Lecteur de contenu pour organiser les articles</li>
+      <li><a href="https://www.google.com/alerts">Google Alerts</a></li>
+      <li><a href="https://flutter.dev/">Site web Flutter</a></li>
+      <li><a href="https://docs.flutter.dev/">Documentation Flutter</a></li>
+      <li><a href="https://flutter.dev/community">Communauté Flutter</a></li>
+      <li><a href="https://flutter.dev/showcase">Applications Flutter</a></li>
+      <li><a href="https://www.concettolabs.com/blog/top-10-flutter-app-tools/">Les Outils tendances Flutter</a></li>
+      <li><a href="https://solguruz.com/blog/top-flutter-app-development-trends/">Les applications dévloppés par Flutter</a></li>
+      <li><a href="https://www.youtube.com/@Fireship/playlists">Presentation Flutter</a></li>
+      <li><a href="https://docs.flutter.dev/release/archive?tab=windows">Archives</a></li>
+    </ul>
   </div>
-</div>
+</section>
+
+
 
   
 
 
-  <!-- footer section -->
   <section class="footer_section">
     <div class="container">
       <p>
@@ -285,7 +345,6 @@
       </p>
     </div>
   </section>
-  <!-- footer section -->
   <button onclick="scrollToTop()" id="backToTopBtn" title="Retour en haut">𖤂</button>
 
 
