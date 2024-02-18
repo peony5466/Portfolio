@@ -12,9 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
-  <!-- <link rel="stylesheet" href="images.css"> -->
   <style>
-/* CSS pour les images */
 .img-box {
   display: flex;
   justify-content: center;
@@ -28,7 +26,7 @@
   margin: 15px;
   overflow: hidden;
   position: relative;
-  height: 500px; /* Ajustez la hauteur fixe selon vos préférences */
+  height: 500px;
   perspective: 1000px;
   border-radius: 20px;
   border-radius: 20px 20px 0 0;
@@ -37,7 +35,7 @@
 
 .img-frame img {
   width: 100%;
-  height: 78%; /* Ajustez la hauteur à 100% pour remplir le cadre */
+  height: 78%; 
   object-fit: cover;
   transform-style: preserve-3d;
   transition: transform 0.5s;
@@ -50,8 +48,7 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  transform: rotateY(180deg); /* Rotation initiale à 180 degrés (dos de la carte caché) */
-  transition: transform 0.5s;
+  transform: rotateY(180deg);
   opacity: 0;
   background-color: white;
   color: black;
@@ -62,15 +59,15 @@
 }
 
 .img-frame:hover img {
-  transform: rotateY(-180deg); /* Rotation au survol vers l'arrière */
+  transform: rotateY(-180deg); 
 }
 
 .img-frame:hover .img-back {
-  transform: rotateY(0deg); /* Rotation au survol vers l'avant (affiche le dos de la carte) */
+  transform: rotateY(0deg); 
   opacity: 1;
 }
 .img-back p {
-  margin-bottom: 10px; /* Espacement entre les paragraphes */
+  margin-bottom: 10px;
 }
 
 
@@ -157,10 +154,8 @@
         </nav>
       </div>
     </header>
-    <!-- end header section -->
   </div>
 
-  <!-- about section -->
 
   <section class="about_section layout_padding" style="background-color: #00204a; color:#ffff;">
     <div class="container  ">
@@ -169,8 +164,7 @@
         <span>Mes</span> Stages
         </h2>
         <p>
-Vous trouverez dans cette page l'ensembles des Stages que j'ai eu la chance de travailler durant la periode de ma formation de BTS SIO        </p>
-      </div>
+          Vous trouverez sur cette page l'ensemble des stages auxquels j'ai participé durant ma formation en BTS SIO.</p>      </div>
 
       <div class="row">
         <div class="col-md-12">
@@ -202,11 +196,24 @@ Vous trouverez dans cette page l'ensembles des Stages que j'ai eu la chance de t
           </div>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="detail-box">
+            <h3>
+              STAGE 2
+            </h3>
+<p>
+  Pendant mon stage de cinq semaines durant ma première année de BTS SIO en juin 2021, j'ai participé à un projet crucial au sein de mon lycée : la création d'une Fiche d'Urgence, un formulaire interactif destiné aux parents pour recueillir des informations vitales sur leurs enfants en cas d'urgence. Nous avons utilisé les applications de la suite Google Workspace, telles que Google Forms, Sheets, Docs, et Google Apps Script pour automatiser les processus. Grâce à Google Forms, nous avons développé un formulaire intuitif permettant aux parents de fournir facilement les données nécessaires. L'intégration de JavaScript (JS) et de Google Apps Script a permis d'envoyer automatiquement des notifications par e-mail aux parents lors de la soumission du formulaire. Les données collectées ont été sécurisées dans une feuille de calcul Google Sheets, garantissant la confidentialité et l'accessibilité en cas de besoin. Ce projet a grandement simplifié la gestion des urgences pour le personnel scolaire en centralisant les données, en automatisant les notifications et en rendant les informations cruciales facilement accessibles. Cette expérience a été une occasion précieuse d'appliquer mes compétences en programmation tout en démontrant ma capacité à concevoir et à mettre en œuvre des solutions informatiques pratiques et utiles.</p>
+          </div>
+        </div>
+      </div>
+
       <div class="row">
         <div class="col-md-12">
           <div class="detail-box">
 
-
+<!-- 
       <div class="row">
         <div class="col-md-12">
           <div class="detail-box"><br>
@@ -218,7 +225,6 @@ Vous trouverez dans cette page l'ensembles des Stages que j'ai eu la chance de t
               <div class="img-frame">
                 <img src="images/importation.png" alt="">
                 <div class="img-back"><b>
-                  <!-- Description du projet pour la première image -->
                   <h3><p>Page d'importation des fichiers.</p><br></h3>
                   <p>la page accepte les fichiers excel et csv de n'importe quel taille.</p><br></b>
                   <p>
@@ -229,7 +235,6 @@ Vous trouverez dans cette page l'ensembles des Stages que j'ai eu la chance de t
               <div class="img-frame">
                 <img src="images/choix_colonne.png" alt="">
                 <div class="img-back"><b>
-                  <!-- Description du projet pour la deuxième image -->
                   <h3><p>page choix_colonne.</p></h3><br><br>
                   <p>une interface qui donne a l'utilisateur l'option de choisir les axe 'X' et 'Y' pour le graph.</p></b><br>
                   <p>Cette page recupere le contenu du dernier fichier enregistrer localement et affiche tout les colonnes existantes dans ce dernier pour choisir les axes du graph ensuiste on donne a l'utilisateur le chois de choisir entre un graph circulaire ou bien un histogramme pour afficher les données. </p>
@@ -240,7 +245,6 @@ Vous trouverez dans cette page l'ensembles des Stages que j'ai eu la chance de t
                 <img src="images/dashboardvue.png" alt="">
                 <div class="img-back">
                   <b>
-                  <!-- Description du projet pour la troisième image -->
                   <h3><p>Page de tableau de bord.</p></h3><br>
                   <p>Visualisation des données.</p></b><br>
                   <p>Après le choix des colonnes on presente un graph en fonction de choix d'utilisateur </p>
@@ -250,12 +254,12 @@ Vous trouverez dans cette page l'ensembles des Stages que j'ai eu la chance de t
             
           </div>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </section>
 
-  <!-- end about section -->
+
 
   <!-- footer section -->
   <section class="footer_section">
@@ -302,6 +306,7 @@ Vous trouverez dans cette page l'ensembles des Stages que j'ai eu la chance de t
       });
     });
   </script>
+
   
 
   
